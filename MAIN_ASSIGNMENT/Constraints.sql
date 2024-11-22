@@ -1,0 +1,19 @@
+USE tennis;
+
+ALTER TABLE single_ranking
+ADD CONSTRAINT fk_player
+FOREIGN KEY (player) REFERENCES players (player_id)
+ON DELETE CASCADE
+ON UPDATE CASCADE; 
+
+ALTER TABLE matches_94_04_14_24
+ADD CONSTRAINT fk_winner_id
+FOREIGN KEY (winner_id) REFERENCES players (player_id)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
+
+ALTER TABLE matches_94_04_14_24
+ADD CONSTRAINT fk_loser_id
+FOREIGN KEY (loser_id) REFERENCES players (player_id)
+ON DELETE CASCADE
+ON UPDATE CASCADE;

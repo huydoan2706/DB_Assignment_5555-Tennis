@@ -15,7 +15,7 @@ INSERT INTO players(player_id, first_name, last_name, hand, date_of_birth, natio
 ('206499', 'Aleksandar', 'Kovacevic', 'R', '1998-08-29', 'AUS', '183'), -- 87
 ('209992', 'Juncheng', 'Shang', 'L', '2005-02-02', 'CHN', '180'), -- 92
 ('200443', 'Adam', 'Walton', 'R', '1999-04-17', 'AUS', '183'), -- 96
-('207681', 'Francisco', 'Comesana', 'R', '2000-10-06', 'ARG', '178') -- 99
+('207681', 'Francisco', 'Comesana', 'R', '2000-10-06', 'ARG', '178'); -- 99
 
 INSERT INTO single_ranking(ranking_date, ranking, player, points) values
 ('2024-05-27', '15', '210097', '2500'),
@@ -30,7 +30,7 @@ INSERT INTO single_ranking(ranking_date, ranking, player, points) values
 ('2024-05-27', '87', '206499', '681'),
 ('2024-05-27', '92', '209992', '660'),
 ('2024-05-27', '96', '200443', '635'),
-('2024-05-27', '99', '207681', '626'),
+('2024-05-27', '99', '207681', '626');
 
 
 INSERT INTO matches_94_04_14_24(tourney_id, tourney_name, surface, draw_size, tourney_date, winner_id, loser_id, score, best_of, round) values

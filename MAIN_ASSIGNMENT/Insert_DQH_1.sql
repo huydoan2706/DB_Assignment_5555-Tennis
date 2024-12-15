@@ -33,9 +33,3 @@ INSERT INTO single_ranking(ranking_date, ranking, player, points) values
 ('2024-05-27', '99', '207681', '626');
 
 
-INSERT INTO matches_94_04_14_24(tourney_id, tourney_name, surface, draw_size, tourney_date, winner_id, loser_id, score, best_of, round) values
-('2022-RG', 'Roland Garros', 'Clay', '128', '2022-05-22', '104745', '104925', '6-2 4-6 6-2 7-6(4)', 5, 'QF'),
-('2012-RG', 'Roland Garros', 'Clay', '128', '2012-05-27', '104745', '104925', '6-4 6-3 2-6 7-5', 5, 'F'),
-('2020-RG', 'Roland Garros', 'Clay', '128', '2020-09-27', '104745', '104925', '6-0 6-2 7-5', 5, 'F'),
-('2019-AO', 'Australian Open', 'Hard', '128', '2019-01-14', '104925', '104745', '6-3 6-2 6-3', 5, 'F'),
-('2012-AO', 'Australian Open', 'Hard', '128', '2012-01-15', '104925', '104745', '5-7 6-4 6-2 6(5)-7 7-5', 5, 'F');

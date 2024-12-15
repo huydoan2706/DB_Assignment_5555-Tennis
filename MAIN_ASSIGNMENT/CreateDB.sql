@@ -5,15 +5,17 @@ USE tennis;
 DROP TABLE IF EXISTS players;
 DROP TABLE IF EXISTS ranking;
 DROP TABLE IF EXISTS matches_94_04_14_24;
+DROP TABLE IF EXISTS tournaments;
+DROP TABLE IF EXISTS events;
 
 CREATE TABLE players(
-	player_id int,
-    first_name varchar(100) DEFAULT NULL,
-    last_name varchar(100) DEFAULT NULL,
-    hand varchar(1) DEFAULT NULL, 
-    date_of_birth date DEFAULT NULL,
-    nationality varchar(3) DEFAULT NULL, 
-    height int DEFAULT NULL,
+	player_id int NOT NULL,
+    first_name varchar(100) NOT NULL,
+    last_name varchar(100) NOT NULL,
+    hand varchar(1) NOT NULL, 
+    date_of_birth date NOT NULL,
+    nationality varchar(3) NOT NULL, 
+    height int NOT NULL,
     PRIMARY KEY (player_id)
 );
 
@@ -25,11 +27,10 @@ CREATE TABLE single_ranking(
 );
 
 CREATE TABLE matches_94_04_14_24(
-	tourney_id varchar(50) NOT NULL, 
-    tourney_name varchar(100) NOT NULL,
+	tournament_key int NOT NULL, 
     surface varchar(10) NOT NULL,
     draw_size int NOT NULL,
-    tourney_date date NOT NULL,
+    tournament_date date NOT NULL,
     winner_id int NOT NULL,
     loser_id int NOT NULL,
     score varchar(100) NOT NULL, 
@@ -37,4 +38,9 @@ CREATE TABLE matches_94_04_14_24(
     round varchar(50) NOT NULL
 );
 
+CREATE TABLE tournaments(
+	tournament_key int NOT NULL,
+    tournament_name text NOT NULL,
+    PRIMARY KEY (tournament_key)
+);
 

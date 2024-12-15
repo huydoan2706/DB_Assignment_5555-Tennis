@@ -17,3 +17,9 @@ ADD CONSTRAINT fk_loser_id
 FOREIGN KEY (loser_id) REFERENCES players (player_id)
 ON DELETE CASCADE
 ON UPDATE CASCADE;
+
+ALTER TABLE matches_94_04_14_24
+ADD CONSTRAINT fk_tournament
+FOREIGN KEY (tournament_key) REFERENCES tournaments (tournament_key)
+ON DELETE CASCADE
+ON UPDATE CASCADE;

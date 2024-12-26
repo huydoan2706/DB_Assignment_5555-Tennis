@@ -1,5 +1,7 @@
 -- made by Ta Quang Linh
 
+USE tennis;
+
 DELIMITER //
 -- tìm thông tin người chơi qua quốc tịch: getPlayerByNation 
 CREATE PROCEDURE getPlayerByNation(IN nationName VARCHAR(3))

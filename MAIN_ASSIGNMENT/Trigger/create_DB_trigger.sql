@@ -1,3 +1,4 @@
+-- Made by Nguyen Duc Huy
 -- Tao  bang cho trigger 1 ( bang ranking_history)
 CREATE TABLE  IF NOT EXISTS ranking_history (
     history_id INT AUTO_INCREMENT, 

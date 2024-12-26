@@ -1,3 +1,5 @@
+-- made by Ta Quang Linh
+
 DELIMITER //
 -- tìm thông tin người chơi qua quốc tịch: getPlayerByNation 
 CREATE PROCEDURE getPlayerByNation(IN nationName VARCHAR(3))

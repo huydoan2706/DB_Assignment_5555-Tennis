@@ -1,3 +1,6 @@
+-- Made by Nguyen Duc Huy
+USE tennis;
+
 DROP TRIGGER IF EXISTS after_player_insert;
 DELIMITER $$
 CREATE TRIGGER after_player_insert

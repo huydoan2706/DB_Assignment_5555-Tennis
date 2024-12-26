@@ -1,9 +1,11 @@
+-- Made by Nguyen Duc Huy
+
 USE tennis;
 
 INSERT INTO players (player_id, first_name, last_name, hand, date_of_birth, nationality, height)
-VALUES (3, 'Novak', 'Djokovic', 'R', '1987-05-22', 'SRB', 188);
+VALUES (555555, 'Duc Huy', 'Nguyen', 'R', '2005-08-12', 'VIE', 165);
 
 INSERT INTO players (player_id, first_name, last_name, hand, date_of_birth, nationality, height)
-VALUES (4, 'Novak', 'Djokovmic', 'L', '1984-05-22', 'SRB', 188);
+VALUES (666666, 'Quang Linh', 'Ta', 'L', '2005-02-20', 'VIE', 167);
 
 SELECT * FROM player_audit;
